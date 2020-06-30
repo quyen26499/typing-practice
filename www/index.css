@@ -118,6 +118,7 @@ body {
     color: #ff3366;
 }
 
+/* rank table */
 .rank {
     position: fixed;
     top: 256px;
@@ -148,4 +149,92 @@ body {
     position: absolute;
     top: 350px;
     left: 160px;
+}
+
+/* typing */
+
+.typing {
+    position: absolute;
+    top: 265px;
+    left: 466px;
+    right: 1446px;
+    width: 1050px;
+}
+.typing select {
+    background-color: #222222;
+    color: white;
+    border: none;
+    width: 202px;
+    height: 49px;
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: Arial;
+    padding: 0px 30px;
+}
+
+#startButton {
+    position: absolute;
+    margin-left: 50px;
+    background-color: #222222;
+    width: 80px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+#text {
+    position: absolute;
+    top: 66px;
+    left: 30px;
+    width: 100%;
+    color: white;
+    background-color: #222222;
+    border: 2px solid #464646;
+}
+
+.typing input {
+    position: absolute;
+    top: 150px;
+    width: 500px;
+    height: 50px;
+    font-size: 25px;
+    font-family: Arial;
+    border: 2px solid #ff3366;
+    border-radius: 10px;
+}
+.time {
+    position: absolute;
+    top: 155px;
+    left: 750px;
+    width: 80px;
+    height: 50px;
+    font-size: 25px;
+    font-family: Arial;
+
+    background-color: #222222;
+    border-radius: 10px;
+}
+.time p {
+    position: relative;
+    text-align: center;
+    top: -12px;
+}
+.resetButton {
+    position: absolute;
+    top: 155px;
+    left: 850px;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+}
+.resetButton button{
+    display: block;
+    text-decoration: none;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    
+    background-color: #222222;
 }
