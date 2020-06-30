@@ -117,3 +117,35 @@ body {
     border: 2px solid #ff3366;
     color: #ff3366;
 }
+
+.rank {
+    position: fixed;
+    top: 256px;
+    right: 5px;;
+    width: 337px;
+    height: 390px;
+    border: 2px solid #464646;
+    background-color: #222222;
+}
+.rank table {
+    font-size: 20px;
+}
+
+
+.rank table th {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 80px;
+}
+.rank table td {
+    padding-top: 10px;
+    height: 40px;
+    padding-left: 40px;  
+}
+
+.rank i {
+    position: absolute;
+    top: 350px;
+    left: 160px;
+}
