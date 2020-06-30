@@ -78,7 +78,35 @@
         
     </div>
 
-    
+    <div id="scoreModal">
+        <div id="modalContent">
+            <h2>RESULT</h2>
+            <hr>
+            <h2>Wpm</h2>
+            <table>
+                <!-- <tr>
+                    <td>Keystrokes</td>
+                    <td>(10|4) 14</td>
+                </tr> -->
+                <tr>
+                    <td>Words</td>
+                    <td id="words"></td>
+                </tr>
+                <tr>
+                    <td>Correct Letter</td>
+                    <td id="correct" style="color: limegreen;"></td>
+                </tr>
+                <tr>
+                    <td>Wrong Letter</td>
+                    <td id="incorrect" style="color: firebrick;"></td>
+                </tr>
+            </table>
+            <hr>
+            <button onclick="closeModal()" id="closeModal">OK</button>
+
+        </div>
+
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
