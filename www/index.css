@@ -238,3 +238,24 @@ body {
     
     background-color: #222222;
 }
+#modalContent {
+    background-color: #222222;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 23%;
+    height: 40%;
+}
+#modalContent h2{
+    text-align: center;
+}
+#modalContent table{
+    font-size: 25px;
+    font-family: Arial;
+}
+#modalContent table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    
+}
