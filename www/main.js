@@ -65,3 +65,23 @@
 
     
   })
+  
+function submit(){
+    scoreModal.style.display = "block";
+    document.getElementById("typing").value = "";
+    console.log(x);
+    console.log(typeof(x));
+
+    document.getElementById("correct").innerHTML = correct;
+    document.getElementById("incorrect").innerHTML = incorrect;
+    document.getElementById("words").innerHTML = words;
+    reset();
+    restart();
+    clearTimeout(timeout);
+    document.getElementById("typing").disabled = true;
+    //return false;
+}
+
+function closeModal(){
+    scoreModal.style.display = "none";
+}
