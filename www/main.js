@@ -1,4 +1,4 @@
-    
+   
     var newText = ["after all you are only an immortal until someone manages to kill you after that you were just long lived",
                     "as long as poverty injustice and gross inequality persist in our world none of us can truly rest",
                     "we  once you have tasted flight you will walk the earth with your eyes turned skywards for there you have been and there you will long to return",
@@ -85,3 +85,21 @@ function submit(){
 function closeModal(){
     scoreModal.style.display = "none";
 }
+
+
+function start(){
+    document.getElementById("typing").disabled = false;
+    if(s == -1){
+        clearTimeout(timeout);
+        //alert("time out");
+        submit();
+        return false;
+    }
+    document.getElementById('s').innerText = s.toString();
+    timeout = setTimeout(function(){
+        s--;
+        start();
+    },1000);
+
+}
+
