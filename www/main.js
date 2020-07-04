@@ -120,3 +120,11 @@ function reset(){
     text = " " + document.getElementById("text").value;
     textIndex = 0;
 }
+
+function login(){
+    loginBox.style.display = "block"
+}
+
+document.getElementById("submitLogin").onclick() = function login(){
+    loginbox.style.display = "none"
+}
