@@ -102,4 +102,21 @@ function start(){
     },1000);
 
 }
-
+function restart(){
+    correct = 0;
+    incorrect = 0;
+    x = document.getElementById("typing").value;
+    text = document.getElementById("text").value;
+    words = 1;
+    textIndex = 0;
+    s = 60;
+    clearTimeout(timeout);
+    document.getElementById('s').innerText = s.toString();
+    document.getElementById("typing").value = "";
+}
+    
+function reset(){
+    document.getElementById("text").value = newText[Math.floor(Math.random()*10)];
+    text = " " + document.getElementById("text").value;
+    textIndex = 0;
+}
