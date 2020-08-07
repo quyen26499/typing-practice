@@ -121,10 +121,27 @@ function reset(){
     textIndex = 0;
 }
 
+// var loginBox = document.getElementById("loginBox");
+var Logincontain = document.getElementById("Logincontainer");
 function login(){
-    loginBox.style.display = "block"
+    Logincontain.style.display = "block"
 }
 
-document.getElementById("submitLogin").onclick() = function login(){
-    loginbox.style.display = "none"
+
+// document.getElementById("submitLogin").onclick() = function login(){
+//     loginBox.style.display = "none"
+// }
+
+// $(window).onclick(function(event) {
+//     if (event.target == loginBox) {
+//         loginBox.style.display = "none";
+//     }
+// })
+
+
+
+window.onclick = function(event) {
+    if (event.target == Logincontain) {
+        Logincontain.style.display = "none";
+    }
 }

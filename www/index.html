@@ -7,21 +7,23 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 <body>
+
     <div class="navbar">
         <ul>
             <li><img src="./img/typing logo 2.png"></li>
             <li>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LoginModal" onclick="login()">
                     Login
                 </button>
             </li>
         </ul>
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -41,7 +43,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="leftSideBar">
         <ul>
@@ -135,20 +137,20 @@
         </div>
 
     </div>
-
-    <!-- <div class="loginbox" id="loginBox">
+    <div id="Logincontainer">
+    <div class="loginbox" id="loginBox">
         <h1>Login</h1>
         <form>
             <button>Login with google</button>
             <p>Username/Email</p>
             <div class="t1">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <input type="text" name="" placeholder="input with icon">  
+                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                <input type="text" name="" placeholder="">  
             </div>
             <p>Password</p>
             <div class="t2">
-                <i class="fa fa-lock" aria-hidden="true"></i>
-                <input type="password" name="" placeholder="input with icon">
+                <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                <input type="password" name="" placeholder="">
             </div>
             <input type="checkbox" class="check-box"><span>Remember me</span>
             <input type="submit" class="submit-btn" id="submitLogin" value="LOGIN">
@@ -157,7 +159,8 @@
         <div class="sign-up">
             Don't have an account? <a class="s1" href="#">Sign up</a>
         </div>
-        </div> -->
+        </div>
+    </div>
     <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
