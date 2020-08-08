@@ -2,7 +2,7 @@ body {
     background: black;
     color:rgba(255, 255, 255, 0.9);
     width: 100%;
-    height: 700px;
+    height: 800px;
     position: relative;
     padding: 0px 0px;
 }
@@ -69,7 +69,7 @@ body {
     position: fixed;
     left: -1px;
     top: 230px;
-    width: 230px;
+    width: 180px;
     height: 340px;
     background-color: #222222;
     border: 1px solid #464646;
@@ -81,50 +81,50 @@ body {
 .leftSideBar ul li {
     padding: 20px 0px;
 }
-.leftSideBar ul li button {
+.leftSideBar ul li a {
     background-color: #222222;
     color:white;
     border: 2px solid black;
     font-family: Arial;
-    width: 252px;
+    width: 205px;
     height: 63px;
-    font-size: 20px;
+    left: 0px;
+    font-size: 17px;
     letter-spacing: 4px;
     border-radius: 30px;
-
     transition-duration: 0.4s;
 }
-.leftSideBar ul li button:hover {
+.leftSideBar ul li a:hover {
     background-color: #ff3366;
     color: white;
 }
-.buttonTP {
+#btnTP {
     position: absolute;
     left: -30px;
     top: 60px;
 }
 
-.buttonHTP {
+#btnHTP {
     position: absolute;
     left: -30px;
     top: 140px;
 }
 
-.buttonA {
+#btnTT {
     position: absolute;
     left: -30px;
     top: 220px;
 }
 
-.buttonTP:focus {
+#btnTP:focus {
     border: 2px solid #ff3366;
     color: #ff3366;
 }
-.buttonHTP:focus {
+#btnHTP:focus {
     border: 2px solid #ff3366;
     color: #ff3366;
 }
-.buttonA:focus {
+#btnTT:focus {
     border: 2px solid #ff3366;
     color: #ff3366;
 }
@@ -325,10 +325,10 @@ body {
     border: 1px solid  #5a5a5a;
     border-radius: 5px;
     position: fixed;
-    top: 5px;
+    top: 50px;
     left: 484px;
     width: 550px;
-    height:750px;
+    height:650px;
     text-align: center;
 }
 .loginbox input[type="text"],.loginbox input[type = "password"]{
@@ -337,8 +337,8 @@ body {
     margin: 0px auto;
     text-align: left;
     border: 1px solid #5a5a5a;
-    padding: 20px 10px;
-    width: 300px;
+    padding: 15px 10px;
+    width: 320px;
     outline: none;
     color: white;
     border-radius: 5px;
@@ -348,13 +348,13 @@ body {
     color: #ff3366;
     position: absolute;
     right: 135px ;
-    top: 300px;
+    top: 275px;
 }
 .t2 i{
     color: #ff3366;
     position: absolute;
     right: 135px ;
-    top: 440px;
+    top: 385px;
 }
 .loginbox h1{
     color: white;
@@ -364,7 +364,7 @@ body {
     font-family: Arial;
 }
 .loginbox form p{
-    margin: 40px 115px 12px;
+    margin: 20px 115px 12px;
     padding: 0;
     font-weight: bold;
     text-align: left;
@@ -374,7 +374,7 @@ body {
 .loginbox form button{
     position: absolute;
     right: 115px;
-    top: 160px;
+    top: 130px;
     background-color: #222222; 
     border: 2px solid #ff3366;
     border-radius: 5px;
@@ -394,21 +394,21 @@ body {
     background-color: #ff3366;
 }
 .check-box{
-    margin: 25px 15px 40px -295px;
+    margin: 38px 8px 25px -295px;
 }
 span{
     color: white;
     font-size: 18px;
     position: absolute; 
     font-family: Arial;
-    bottom: 216px;
+    bottom: 160px;
 }
 .submit-btn{
     width: 30%;
     padding: 18px 10px;
     cursor: pointer;
     display: block;
-    margin: 25px 115px;
+    margin: 15px 120px;
     background: #ff3366;
     letter-spacing: 4px;
     border-radius: 5px;
@@ -427,8 +427,8 @@ span{
 }
 .forgot-password{
     position: absolute;
-    top: 610px;
-    right: 130px;
+    top: 540px;
+    right: 115px;
     text-decoration: none;
     color: #ff3366;
 }
@@ -440,4 +440,93 @@ a:hover{
     text-decoration: none;
 } 
 
+html{
+    scroll-behavior: smooth;
+}
+
+.HowToType {
+    background: black;
+    color:rgba(255, 255, 255, 0.9);
+    left: 190px;
+    width: 80%;
+    height: 680px;
+    position: relative;
+    padding: 0px 0px;
+    top: 800px;
+}
+
+.HowToType h3{
+    font-size: 18px;
+}
+
+.HowToType h2{
+    font-size: 21px;
+}
+
+.HowToType p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.TypingTest {
+    position: absolute;
+    top: 1500px;
+    left: 80px;
+    right: 1446px;
+    width: 1050px;
+    height: 800px;
+}
+
+
+.TypingTest #startButton {
+    position: absolute;
+    margin-left: 0px;
+    background-color: #222222;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.TypingTest #text {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 67%;
+    height: 80px;
+    color: white;
+    background-color: #222222;
+    border: 2px solid #464646;
+}
+
+.TypingTest .typing input {
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    width: 67%;
+    height: 50px;
+    font-size: 25px;
+    font-family: Arial;
+    border: 2px solid #ff3366;
+    border-radius: 10px;
+}
+
+.TypingTest .resetButton {
+    position: absolute;
+    top: 250px;
+    left: 470px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.TypingTest .resetButton button{
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #222222;
+}
 
