@@ -16,40 +16,18 @@
         <ul>
             <li><img src="./img/typing logo 2.png"></li>
             <li>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LoginModal" onclick="login()">
+                <button type="button" class="btn btn-primary" onclick="login()">
                     Login
                 </button>
             </li>
         </ul>
     </div>
 
-    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button>Login with google</button>
-                    <p>Username/Email</p>
-                    <div class="t1">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <input type="text" name="" placeholder="">  
-                    </div>
-                    <p>Password</p>
-                    <div class="t2">
-                        <i class="fa fa-lock" aria-hidden="true"></i>
-                        <input type="password" name="" placeholder="">
-                    </div>
-                    <input type="checkbox" class="check-box"><span>Remember me</span>
-                    <input type="submit" class="submit-btn" id="submitLogin" value="LOGIN">
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <div class="leftSideBar">
         <ul>
-            <li><button class="buttonTP">Typing Test</button></li>
-            <li><button class="buttonHTP">How to type</button></li>
-            <li><button class="buttonA">About</button></li>
+            <li><a href="#buttonTP" class="btn btn-primary" id="btnTP" >Typing Practice</a></li>
+            <li><a href="#buttonHTP" class="btn btn-primary" id="btnHTP">How to type</a></li>
+            <li><a href="#buttonTT" class="btn btn-primary" id="btnTT">Typing Test</a></li>
         </ul>
     </div>
 
@@ -84,7 +62,7 @@
         </table>
     </div>
 
-    <div class="typing">
+    <div class="typing" id="buttonTP">
         <select name="" id="">
             <option value="">Tiếng Việt</option>
             <option value="">Tiếng Anh</option>
@@ -161,6 +139,57 @@
         </div>
         </div>
     </div>
+
+    <div class="HowToType" id="buttonHTP">
+        <h3>How to Type: 5 Tips for Faster Typing</h3>
+        
+        <h2>1. Learn to touch type.</h2>
+        <p>
+            If you don’t know how to touch type, this is where you need to start. Having the ability to type without looking at the keyboard is the most important factor in achieving a fast typing speed. Even if you have memorized many of the keys, unfamiliar keys will slow you down just like speed bumps on the freeway. Taking your eyes off the screen to peek at the keyboard disrupts your focus and costs you time. You want to be able to keep your eyes on the screen and your fingers moving to the correct keys without thinking. Achieving this kind of flow takes practice. The better you can do it, the faster you will be. Read on to learn how.
+        </p>
+
+        <h2>2. Aim for accuracy rather than speed.</h2>
+        <p>
+            It does not matter how fast you type if you have to go back and fix all your mistakes. Fixing mistakes takes more time than it does to just slow down and take the time you need to type accurately. Fast typing depends on developing precision muscle memory. Allowing yourself to type incorrectly will actually reinforce your bad habits and common mistakes! Slow your typing pace until you can attain 100% accuracy. If you come across a difficult word, slow down further to type it properly. Develop good habits and speed will be your reward.
+        </p>
+
+        <h2>3. Learn the entire keyboard.</h2> 
+        <p>
+            You may have enough experience typing to know most of the common keys - the letters, the space bar, enter, and I’ll bet you know that backspace! But you might be uncomfortable with some of the keys you don’t use as frequently. Do you have to slow down and look at the keyboard to type a number or symbol? If you program or work with spreadsheets you will use the symbol keys frequently. If you are a gamer there are probably CTRL, ALT and function keys that you fumble for in the heat of the battle. In fact, most all programs can be used more productively when you know the key combo shortcuts for doing common tasks. Hitting these awkward keys and combos accurately allows you to maintain focus on what you are doing, so make sure you include them in your typing practice.
+        </p>
+
+        <h2>4. Practice typing exercises regularly.</h2>
+        <p>
+            Mastering typing skills takes training and practice. Practice on a regular schedule, 10 minutes to an hour per session, depending on your energy and focus level. As Vince Lombardi said, “Practice doesn’t make perfect, perfect practice makes perfect,” so it is important that you practice at a time and place where you can maintain focus and accuracy. Eliminate any potential distractions. If you find yourself making lots of errors, slow down and find a way to regain your focus or call it a day. The goal of practicing is to build muscle memory. You do not want to “learn” bad habits and mistakes.
+        </p>
+
+        <h2>5. Minimize your physical effort.</h2>
+        <p>
+            The less work your fingers do to press the keys the faster you will be able to move them. Most keyboards require only a light touch to register a key stroke, so there is no need to mash the keys down. You should type with the minimum force necessary. You will type faster and put less strain on your body. Typing involves muscles not only in your fingers, but in your hands, arms, back, shoulders, neck and head.
+        </p>
+    </div>
+
+    <div class="TypingTest" id="buttonTT">
+        <div class="typing">
+    
+            <button onclick="start()" id="startButton">
+                <i class="fas fa-play fa-2x" style="color: white;"></i>
+            </button>
+    
+            
+            <input type="text" id="text" disabled>
+            
+    
+            <input type="text" id="typing" disabled>
+
+            </div>
+            <div class="resetButton">
+                <button onclick="reset()"><i class="fas fa-redo-alt fa-2x" style="color: white;"></i></button>
+            </div>
+            
+        </div>
+    </div>
+
     <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
