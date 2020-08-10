@@ -13,7 +13,7 @@
 <body>
 
     <div class="navbar">
-        <ul>
+        <ul class="navbar__heading">
             <li><img src="./img/typing logo 2.png"></li>
             <li>
                 <button type="button" class="btn btn-primary" onclick="login()">
@@ -24,7 +24,7 @@
     </div>
 
     <div class="leftSideBar">
-        <ul>
+        <ul class="leftSideBar__list">
             <li><a href="#buttonTP" class="btn btn-primary" id="btnTP" >Typing Practice</a></li>
             <li><a href="#buttonHTP" class="btn btn-primary" id="btnHTP">How to type</a></li>
             <li><a href="#buttonTT" class="btn btn-primary" id="btnTT">Typing Test</a></li>
@@ -64,8 +64,8 @@
 
     <div class="typing" id="buttonTP">
         <select name="" id="">
+            <option value="">English</option>
             <option value="">Tiếng Việt</option>
-            <option value="">Tiếng Anh</option>
         </select>
 
         <button onclick="start()" id="startButton">

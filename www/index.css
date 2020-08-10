@@ -13,11 +13,11 @@ body {
 
 .navbar {
     background-color: #222222;
-
     width: 100%;
-    height: 50px;
+    height: 65px;
     position: fixed;
-    top: 5px;
+    top: 0px;
+    z-index: 1;
 }
 .navbar ul {
     list-style-type: none;
@@ -36,7 +36,7 @@ body {
     position: absolute;
     width: 100px;
     height: 45px;
-    top: 0px;
+    top: 10px;
     bottom: 0px;
     left: 63px;
     right: 0px;
@@ -51,7 +51,7 @@ body {
     text-align: center;
     width: 100px;
     height: 45px;
-    top: 0px;
+    top: 10px;
     letter-spacing: 5px;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -66,10 +66,10 @@ body {
 
 /* side bar and directive button */
 .leftSideBar {
-    position: fixed;
-    left: -1px;
+    position: absolute;
+    left: 0px;
     top: 230px;
-    width: 180px;
+    width: 240px;
     height: 340px;
     background-color: #222222;
     border: 1px solid #464646;
@@ -84,9 +84,10 @@ body {
 .leftSideBar ul li a {
     background-color: #222222;
     color:white;
+    padding-left: 40px;
     border: 2px solid black;
     font-family: Arial;
-    width: 205px;
+    width: 250px;
     height: 63px;
     left: 0px;
     font-size: 17px;
@@ -100,19 +101,19 @@ body {
 }
 #btnTP {
     position: absolute;
-    left: -30px;
+    left: -38px;
     top: 60px;
 }
 
 #btnHTP {
     position: absolute;
-    left: -30px;
+    left: -38px;
     top: 140px;
 }
 
 #btnTT {
     position: absolute;
-    left: -30px;
+    left: -38px;
     top: 220px;
 }
 
@@ -131,7 +132,7 @@ body {
 
 /* rank table */
 .rank {
-    position: fixed;
+    position: absolute;
     top: 230px;
     right: 5px;
     width: 330px;
@@ -311,12 +312,23 @@ body {
 /* Login */
 
 #Logincontainer {
+    position: fixed;
     width: 100%;
     height: 100%;
     display: none;
     z-index: 1; /* Sit on top */
     /* background-color: rgb(0,0,0); Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    animation: fadeInLogin linear 0.2s;
+}
+
+@keyframes fadeInLogin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .loginbox {
