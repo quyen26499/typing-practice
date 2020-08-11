@@ -186,7 +186,7 @@ body {
 
 #startButton {
     position: absolute;
-    margin-left: 20px;
+    margin-left: 0px;
     background-color: #222222;
     width: 100px;
     height: 50px;
@@ -231,7 +231,7 @@ body {
 .time {
     position: absolute;
     top: 0px;   
-    left: 340px;
+    left: 120px;
     width: 250px;
     height: 50px;
     font-size: 25px;
@@ -247,7 +247,7 @@ body {
 .resetButton {
     position: absolute;
     top: 0px;
-    left: 610px;
+    left: 390px;
     width: 100px;
     height: 50px;
     border-radius: 10px;
