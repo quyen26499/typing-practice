@@ -1,4 +1,6 @@
-   
+
+// typing practice js
+
     var newText = ["after all you are only an immortal until someone manages to kill you after that you were just long lived",
                     "as long as poverty injustice and gross inequality persist in our world none of us can truly rest",
                     "we  once you have tasted flight you will walk the earth with your eyes turned skywards for there you have been and there you will long to return",
@@ -121,14 +123,12 @@ function reset(){
     textIndex = 0;
 }
 
-// var loginBox = document.getElementById("loginBox");
+// login click js
+
 var Logincontain = document.getElementById("Logincontainer");
 function login(){
     Logincontain.style.display = "block"
 }
-
-
-
 
 
 window.onclick = function(event) {
@@ -136,6 +136,8 @@ window.onclick = function(event) {
         Logincontain.style.display = "none";
     }
 }
+
+// typing test js
 
     var newTextTest =  [   "typing is quite easy and enjoyable when you have learned to do it correctly. it is amazing just how quick you can be when you learn to touch type all the letters exactly, from a to z. just relax and realize that typing with excellent accuracy is far better than typing fast; you will find it is quicker in the end.",
                         "I love you the more in that I believe you had liked me for my own sake and for nothing else",
