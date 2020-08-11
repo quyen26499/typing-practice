@@ -1,4 +1,6 @@
-   
+
+// typing practice js
+
     var newText = ["after all you are only an immortal until someone manages to kill you after that you were just long lived",
                     "as long as poverty injustice and gross inequality persist in our world none of us can truly rest",
                     "we  once you have tasted flight you will walk the earth with your eyes turned skywards for there you have been and there you will long to return",
@@ -121,23 +123,12 @@ function reset(){
     textIndex = 0;
 }
 
-// var loginBox = document.getElementById("loginBox");
+// login click js
+
 var Logincontain = document.getElementById("Logincontainer");
 function login(){
     Logincontain.style.display = "block"
 }
-
-
-// document.getElementById("submitLogin").onclick() = function login(){
-//     loginBox.style.display = "none"
-// }
-
-// $(window).onclick(function(event) {
-//     if (event.target == loginBox) {
-//         loginBox.style.display = "none";
-//     }
-// })
-
 
 
 window.onclick = function(event) {
@@ -146,18 +137,21 @@ window.onclick = function(event) {
     }
 }
 
-var textTest =  [   "typing is quite easy and enjoyable when you have learned to do it correctly. it is amazing just how quick you can be when you learn to touch type all the letters exactly, from a to z. just relax and realize that typing with excellent accuracy is far better than typing fast; you will find it is quicker in the end.",
-                    "Capital letters are used frequently - learning to type them efficiently is key to excellent typing! QWERTY keyboards have two large size SHIFT keys, which make it very convenient. Just make sure to utilize the opposite hand to hold the shift key when you type a capital letter. It's much easier this way.",
-                    "12+3-4+5+67+8+9=100. 99 + 88 + 77 + 66 + 55 + 44 + 33 + 22 + 11 - 12 - 23 - 34 - 45 - 56 - 67 - 78 - 89 - 90 = 1. Pi = 3.14159265358979323846264338327950... 23/7 = 3.2857142857... 1kB (kilobyte) = 2^10 bytes = (2^10) * 8 bits. e = 1 + 1/1 + 1/(1*2) + 1/(1*2*3)... = 2.71828... ln(e) = 1 = e^(i*2*pi).",
-                    "How fast can you type? Typing @ >40 WPM (normal text) is considered fast, but pros often exceed ~80WPM! $2.19/page (250 words/page) = $23.652/hour @ 45 WPM & $42.048/hour @ 80 WPM! Words Per Minute, or WPM = [((Total Characters)/5) * (60/Seconds)] @ 100% accuracy. ***However, Adjusted WPM = [(Chars. - (<# of Errors>)*5) * (60/Seconds)*** Fact #418: 2^(2^2)*2^(2^2)) = 2^(2^2 + 2^2) = 2^(2+2+2+2)!!"
-                ];
+// typing test js
 
-    document.getElementById("textTest").value = textTest[Math.floor(textTest.random()*4)];
+    var newTextTest =  [   "typing is quite easy and enjoyable when you have learned to do it correctly. it is amazing just how quick you can be when you learn to touch type all the letters exactly, from a to z. just relax and realize that typing with excellent accuracy is far better than typing fast; you will find it is quicker in the end.",
+                        "I love you the more in that I believe you had liked me for my own sake and for nothing else",
+                        "But man is not made for defeat. A man can be destroyed but not defeated",
+                        "The most difficult thing is the decision to act, the rest is merely tenacity. The fears are paper tigers. You can do anything you decide to do. You can act to change and control your life; and the procedure, the process is its own reward",
+                        "Do not mind anything that anyone tells you about anyone else. Judge everyone and everything for yourself"
+                    ];
 
-    var correct = 0;
-    var incorrect = 0;
-    var words = 1;
-    var textTest = 0;
+    document.getElementById("textTest").value = newTextTest[Math.floor(Math.random()*5)];
+
+
+    var textTestIndex = 0;
+    var textTest = document.getElementById("textTest").value;
+
 
     $("#typingTest").keydown(function (event) {
         event = event || window.event;
@@ -166,15 +160,35 @@ var textTest =  [   "typing is quite easy and enjoyable when you have learned to
         // Read it as a normal key
         const charTyped = String.fromCharCode(charCode);
 
-        if(charTyped.toLowerCase() === text.charAt(textIndex).toLowerCase()){
-            correct++;
+
+        if(charTyped === " "){
+            document.getElementById("typingTest").value = null;
+            // reset();
+            document.getElementById("textTest").value = textTest.substr(textTestIndex + 1, textTest.length);
+            textTest = document.getElementById("textTest").value;
+            textTestIndex = -1
         }
-        else{
-            incorrect++;
-            charTyped.fontcolor("red");
-        };
 
-        console.log(charTyped)
+        textTestIndex++;
 
-    
-  })
+        if(charCode === 8){  // Backspace key
+        
+            textTestIndex = textTestIndex - 2;
+        }
+
+        if(textTestIndex === textTest.length){
+            resetTypingTest();
+        }
+
+
+    })
+
+    function startTypingTest(){
+        document.getElementById("typingTest").disabled = false;
+    }
+
+    function resetTypingTest(){
+        document.getElementById("textTest").value = newTextTest[Math.floor(Math.random()*5)];
+        textTest = " " + document.getElementById("textTest").value;
+        textTestIndex = 0;
+    }
