@@ -145,3 +145,36 @@ window.onclick = function(event) {
         Logincontain.style.display = "none";
     }
 }
+
+var textTest =  [   "typing is quite easy and enjoyable when you have learned to do it correctly. it is amazing just how quick you can be when you learn to touch type all the letters exactly, from a to z. just relax and realize that typing with excellent accuracy is far better than typing fast; you will find it is quicker in the end.",
+                    "Capital letters are used frequently - learning to type them efficiently is key to excellent typing! QWERTY keyboards have two large size SHIFT keys, which make it very convenient. Just make sure to utilize the opposite hand to hold the shift key when you type a capital letter. It's much easier this way.",
+                    "12+3-4+5+67+8+9=100. 99 + 88 + 77 + 66 + 55 + 44 + 33 + 22 + 11 - 12 - 23 - 34 - 45 - 56 - 67 - 78 - 89 - 90 = 1. Pi = 3.14159265358979323846264338327950... 23/7 = 3.2857142857... 1kB (kilobyte) = 2^10 bytes = (2^10) * 8 bits. e = 1 + 1/1 + 1/(1*2) + 1/(1*2*3)... = 2.71828... ln(e) = 1 = e^(i*2*pi).",
+                    "How fast can you type? Typing @ >40 WPM (normal text) is considered fast, but pros often exceed ~80WPM! $2.19/page (250 words/page) = $23.652/hour @ 45 WPM & $42.048/hour @ 80 WPM! Words Per Minute, or WPM = [((Total Characters)/5) * (60/Seconds)] @ 100% accuracy. ***However, Adjusted WPM = [(Chars. - (<# of Errors>)*5) * (60/Seconds)*** Fact #418: 2^(2^2)*2^(2^2)) = 2^(2^2 + 2^2) = 2^(2+2+2+2)!!"
+                ];
+
+    document.getElementById("textTest").value = textTest[Math.floor(textTest.random()*4)];
+
+    var correct = 0;
+    var incorrect = 0;
+    var words = 1;
+    var textTest = 0;
+
+    $("#typingTest").keydown(function (event) {
+        event = event || window.event;
+        // Get the pressed key code
+        const charCode = event.which || event.keyCode;
+        // Read it as a normal key
+        const charTyped = String.fromCharCode(charCode);
+
+        if(charTyped.toLowerCase() === text.charAt(textIndex).toLowerCase()){
+            correct++;
+        }
+        else{
+            incorrect++;
+            charTyped.fontcolor("red");
+        };
+
+        console.log(charTyped)
+
+    
+  })
